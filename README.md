@@ -47,7 +47,14 @@ To connect ROS tf tree with Unity, [Unity-Robotics-Hub](https://github.com/Unity
 roslaunch ros_tcp_endpoint endpoint.launch tcp_ip:=[IP FOR THE LAPTOP RUNNING ROS]
 ```
 
-In Unity, the ROS setting should match with ROS version on the laptop and IP address.
+In Unity, the ROS setting should match with ROS version on the laptop and IP address (also port if necessary).
+<img src="images/Unity-ROS.png"/>
 
 #### Attaching Gameobjects to Real-World Object
 Since the LiDAR's real world position is available in Unity as transforms, users can attach objects to these transforms as children, or keep a history of the past coordinates for smoothing.
+
+The tf tree will be represented as a seperate hierarchy. For example, to represent the `map -> base_link` tf tree, `base_link` will be shown as a child of map in the hierarchy. To access vehicle's real time position in C# (assuming `base_link` is provided in the ROS software stack),
+
+```
+base_link_pos = GameObject.Find("map/base_link");
+```
