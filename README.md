@@ -29,7 +29,7 @@ To generate a map of the study area, we used SLAM algorithms to generate a digit
 
 In this repository, I attached a version of LIO-SAM that can be compiled with ROS 1 Noetic. Adjustments are made based on this [link](https://github.com/TixiaoShan/LIO-SAM/issues/206#issuecomment-784684341).
 
-To visualize point cloud in Unity for event staging, we recommend the [pcx](https://github.com/keijiro/Pcx) shader made by [Keijiro Takahashi](https://github.com/keijiro). Since the shader plugin only works with PLY format files, I figured out a pipeline to convert ROS generated pcd files to PLY format.
+To visualize point cloud in Unity for event staging, we recommend the [pcx](https://github.com/keijiro/Pcx) shader made by [Keijiro Takahashi](https://github.com/keijiro). If you are using HDRP, checkout this [repo](https://github.com/yumayanagisawa/Unity-Point-Cloud-VFX-Graph). Since the shader plugin only works with PLY format files, I figured out a pipeline to convert ROS generated pcd files to PLY format.
 
 1. Open the pcd file in Blender via this nice [plugin](https://markhedleyjones.com/projects/blender-pcd-io) made by [Mark Hedley Jones](https://markhedleyjones.com/).
 2. Save the file as Wavefront obj. (You cannot save directly as PLY here since there are no faces.)
