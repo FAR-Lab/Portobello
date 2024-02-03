@@ -58,3 +58,6 @@ The tf tree will be represented as a seperate hierarchy. For example, to represe
 ```
 base_link_pos = GameObject.Find("map/base_link");
 ```
+
+#### Contact
+For any questions, please email Frank at [fb266@cornell.edu](fb266@cornell.edu).
