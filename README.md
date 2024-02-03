@@ -60,4 +60,4 @@ base_link_pos = GameObject.Find("map/base_link");
 ```
 
 #### Contact
-For any questions, please email Frank at [fb266@cornell.edu](mailto:fb266@cornell.edu).
+For any questions, please email Frank at [fb266 [at] cornell [dot] edu](mailto:fb266@cornell.edu).
